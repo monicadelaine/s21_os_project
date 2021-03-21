@@ -76,21 +76,21 @@ JNIEXPORT void JNICALL Java_edu_cs300_MessageJNI_writePlayerFinalStatsMsg
     fprintf(stderr,"JNI msgsnd-stats: Record %d of %d: %s(#%d) strikeouts=%d, walks=%d, singles=%d, doubles=%d, triples=%d, home runs=%d, game avg=%lf, overall avg=%lf",player_idx,player_cnt,player_name,player_id, strike_outs,  walks,  singles,  doubles,  triples,  home_runs,  gavg,oavg);
 
 
-    // // We'll send message type 1
+    // // We'll send message type 2
     rbuf.mtype = 2;
     rbuf.index=player_idx; //index of response
     rbuf.count=player_cnt; //total excerpts available
- 	int index; //index of players to return
-	int count; //total players to print
+    int index; //index of players to return
+    int count; //total players to print
     rbuf.player_id=player_id;
     strlcpy(rbuf.player_name,player_name,PLAYER_NAME_ARY_LEN);
-	rbuf.strike_outs=strike_outs;
-	rbuf.walks=walks;
-	rbuf.singles=singles;
+    rbuf.strike_outs=strike_outs;
+    rbuf.walks=walks;
+    rbuf.singles=singles;
     rbuf.doubles=doubles;
     rbuf.triples=triples;
     rbuf.home_runs=home_runs;
-	rbuf.game_avg=gavg;
+    rbuf.game_avg=gavg;
     rbuf.overall_avg=oavg;
 
 
