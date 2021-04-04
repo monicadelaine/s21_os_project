@@ -5,7 +5,7 @@ You will complete a multithreaded two process system that communicates via Syste
 
 Git Repository for project files
 
-## All commands and code have been tested on cs-operatingsystems.ua.edu
+## All commands and code have been tested on cs-operatingsystems01.ua.edu
 
 
 - Set up JAVA_HOME environment variable
